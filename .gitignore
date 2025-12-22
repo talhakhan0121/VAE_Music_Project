@@ -1,0 +1,19 @@
+# ---- Datasets (do not upload) ----
+data/
+data/**
+
+# ---- Virtual environment (do not upload) ----
+.venv/
+.venv/**
+
+# ---- Python cache ----
+__pycache__/
+*.pyc
+
+# ---- VS Code / OS ----
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- Optional: backup folder (recommended to ignore) ----
+src_backup/

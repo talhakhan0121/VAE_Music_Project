@@ -1,0 +1,3 @@
+method,silhouette,calinski_harabasz
+PCA(16)+KMeans(k=2),0.5105220675468445,1490.5380859375
+VAE(latent=16)+KMeans(k=2),0.6880443692207336,3171.61572265625
