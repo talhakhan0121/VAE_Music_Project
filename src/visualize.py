@@ -1,6 +1,9 @@
 from __future__ import annotations
 from pathlib import Path
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")  # non-interactive backend (prevents Tkinter crash)
+
 import matplotlib.pyplot as plt
 import umap
 
@@ -15,4 +18,5 @@ def umap_plot(X: np.ndarray, labels: np.ndarray, out_path: Path, title: str):
     plt.tight_layout()
     out_path.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(out_path, dpi=200)
+    plt.savefig(out_path, dpi=200, bbox_inches="tight")
     plt.close()
